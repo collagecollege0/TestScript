@@ -9,12 +9,18 @@ public class TestScript : MonoBehaviour {
 		int[] points = {10, 20, 30, 40, 50};
 
 		// 配列の要素数のぶんだけ処理を繰り返す
-		for (int i = 4; i < points.Length; i--) {
+		for (int i = 0; i < points.Length; i++) {
+			
+				// 配列の要素を表示する
+				Debug.Log (points [i]);
+
+		}
+		for (int i = 4; i >= 0; i--) {
 
 			// 配列の要素を表示する
 			Debug.Log (points [i]);
-		}
 
+		}
 	}
 
 	// Update is called once per frame
